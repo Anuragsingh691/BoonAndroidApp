@@ -1,0 +1,234 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_arrow"
+            android:src="@drawable/ic_back_foreground"
+            android:background="#fff"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/back_arrow"
+            android:id="@+id/layout1"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_1">
+
+            <EditText
+                android:id="@+id/search_edt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search eg: 12 Maths JEE Physics"
+                android:layout_toRightOf="@id/search_img2"
+                android:textColorHint="#4B4747"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="#F7F3F3"
+                android:fontFamily="@font/mons"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/search_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_search_grey"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:id="@+id/filter_search2"
+            android:layout_toRightOf="@id/layout1"
+            android:src="@drawable/ic_list_filter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layout1"
+            android:layout_marginLeft="25dp"
+            android:text="RECENT"
+            android:id="@+id/recent_heading"
+            android:fontFamily="@font/mons"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/twelve_txt"
+            android:layout_below="@id/recent_heading"
+            android:foregroundGravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="XIIth Maths"/>
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/tenth_txt"
+            android:layout_below="@id/recent_heading"
+            android:foregroundGravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/twelve_txt"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="Xth Science"/>
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/nineth_txt"
+            android:layout_below="@id/recent_heading"
+            android:foregroundGravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tenth_txt"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="IXth Science"/>
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/eng2_txt"
+            android:layout_below="@id/twelve_txt"
+            android:foregroundGravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="IXth English"/>
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/hin2_txt"
+            android:layout_toRightOf="@id/eng2_txt"
+            android:layout_below="@id/twelve_txt"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="Xth Hindi"/>
+
+
+        <TextView
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_rect"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:id="@+id/bio_txt"
+            android:layout_toRightOf="@id/hin2_txt"
+            android:layout_below="@id/twelve_txt"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="10dp"
+            android:text="XIIth Bio"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/suggestion_txt"
+            android:layout_below="@id/eng2_txt"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="20dp"
+            android:text="SUGGESTED "/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suggestion_txt"
+            android:layout_margin="20dp"
+            android:id="@+id/suggested_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical"
+                android:id="@+id/suggested_rv"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/offline_txt"
+            android:layout_below="@id/suggested_layout"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="20dp"
+            android:text="OFFLINE NEAR YOU  "/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offline_txt"
+            android:layout_margin="20dp"
+            android:id="@+id/offline_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical"
+                android:id="@+id/offline_rv"/>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/eclipse"
+            android:backgroundTint="#DBD4D4"
+            android:src="@drawable/pets"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

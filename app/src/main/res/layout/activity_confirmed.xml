@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E6E6"
+    tools:context=".ConfirmedActivity">
+
+    <TextView
+        android:id="@+id/dample_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:text="The tutor has been confirmed . You will get the contacted by the tutor shortly within 20 minutes.\n
+Thank you for using our services."
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/mons"/>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tutor_details_line_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/dample_test"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:background="@drawable/eclipse">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

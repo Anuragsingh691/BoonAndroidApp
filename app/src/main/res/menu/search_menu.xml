@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_best_rating"
+        android:fontFamily="@font/mons" android:title="Best Rating" android:icon="@drawable/best_rating" />
+    <item android:id="@+id/bottom_nav_trending_search"
+        android:fontFamily="@font/mons"
+        android:title="Trending" android:icon="@drawable/line"/>
+    <item android:id="@+id/bottom_nav_max_search"
+        android:fontFamily="@font/mons"
+        android:title="Max. Exp" android:icon="@drawable/trophy"/>
+</menu>

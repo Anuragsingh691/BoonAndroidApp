@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/android_1">
+
+    <ImageView
+        android:id="@+id/welcome_img"
+        android:layout_width="58dp"
+        android:layout_height="93dp"
+        android:src="@drawable/home_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp" />
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="360dp"
+        android:layout_height="22dp"
+        android:textAlignment="center"
+        android:text="Welcome"
+        android:textSize="18sp"
+        android:layout_below="@id/welcome_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mons"
+        android:textColor="#7C0A0A" />
+    <TextView
+        android:id="@+id/subts_txt"
+        android:layout_width="360dp"
+        android:layout_height="17dp"
+        android:textAlignment="center"
+        android:text="Lets get connected to wisdom again"
+        android:textSize="14sp"
+        android:layout_below="@id/welcome_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mons"
+        android:textColor="#7C0A0A" />
+
+    <TextView
+        android:id="@+id/otp_text"
+        android:layout_width="234dp"
+        android:layout_height="17dp"
+        android:text="Will send an OTP to continue"
+        android:layout_below="@id/subts_txt"
+        android:layout_centerHorizontal="true"
+        android:textColor="#656565"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/mons" />
+
+    <LinearLayout
+        android:layout_below="@id/otp_text"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/linear1_layout">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rect_1"
+            android:gravity="center"
+            app:ccp_contentColor="#fff"
+            app:ccp_showFlag="false"
+            app:ccp_textSize="14sp" />
+
+        <EditText
+            android:id="@+id/phone_txt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="    your phone number"
+            android:background="@drawable/rectangle_1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="85.82dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rect_1"
+        android:layout_below="@id/linear1_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="LOG IN"
+        android:fontFamily="@font/mons"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/or_txt"
+        android:layout_below="@id/login_btn"
+        android:text="OR"
+        android:textSize="14sp"
+        android:fontFamily="@font/mons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="95.99dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rect_1"
+        android:layout_below="@id/or_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"
+        android:fontFamily="@font/mons"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

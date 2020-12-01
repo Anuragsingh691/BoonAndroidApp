@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.TrendingSearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_arrow"
+            android:src="@drawable/ic_back_foreground"
+            android:background="#fff"/>
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_1"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/back_arrow"
+            android:layout_margin="10dp">
+            <EditText
+                android:id="@+id/search_edt"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_toRightOf="@id/search_img"
+                android:textColorHint="#4B4747"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="#F7F3F3"
+                android:fontFamily="@font/mons"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_search_grey"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="5dp"
+            android:id="@+id/layout2">
+
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:background="@drawable/checkbox_rect"
+                android:textSize="14sp"
+                android:fontFamily="@font/mons"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/sortBy_txt"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="SORT BY:"/>
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="26dp"
+                android:background="@drawable/checkbox_rect"
+                android:fontFamily="@font/mons"
+                android:textSize="14sp"
+                android:layout_marginLeft="-10dp"
+                android:foregroundGravity="center_vertical"
+                android:layout_toRightOf="@id/sortBy_txt"
+                android:textColor="#000"
+                android:id="@+id/popularity_txt"
+                android:text="POPULARITY"/>
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="26dp"
+                android:textSize="14sp"
+                android:foregroundGravity="center_vertical"
+                android:layout_toRightOf="@id/popularity_txt"
+                android:layout_marginLeft="30dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/mons"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/online_txt"
+                android:text="ONLINE"/>
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="26dp"
+                android:textSize="14sp"
+                android:foregroundGravity="center_vertical"
+                android:layout_toRightOf="@id/online_txt"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:fontFamily="@font/mons"
+                android:id="@+id/offline_txt"
+                android:text="OFFLINE"/>
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:background="@drawable/checkbox_rect"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:id="@+id/rating_txt"
+                android:layout_below="@id/sortBy_txt"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mons"
+                android:text="RATING 4+"/>
+
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:background="@drawable/checkbox_rect"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:id="@+id/covidIn_txt"
+                android:layout_toRightOf="@id/rating_txt"
+                android:layout_below="@id/sortBy_txt"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mons"
+                android:text="COVID IN"/>
+
+            <TextView
+                android:layout_width="153dp"
+                android:layout_height="26dp"
+                android:background="@drawable/checkbox_rect"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:id="@+id/cost_txt"
+                android:layout_toRightOf="@id/covidIn_txt"
+                android:layout_below="@id/sortBy_txt"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/mons"
+                android:layout_marginTop="5dp"
+                android:text="COST 99 - 499"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/horiz_line"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/layout2"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/checkbox_rect"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_search_list_rv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/horiz_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

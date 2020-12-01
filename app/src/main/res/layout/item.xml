@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="172dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:layout_marginTop="20dp"
+    android:background="#E7E6E6"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#E7E6E6"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/offers_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boon Covid Initiative"
+            android:fontFamily="@font/mons"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/offers_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Description"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@id/offers_title"
+            android:fontFamily="@font/mons"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/donate_btn"
+            android:layout_width="113.17dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="62dp"
+            android:background="@drawable/rect_1"
+            android:text="DONATE"
+            android:textColor="#fff"
+            android:fontFamily="@font/mons"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/learn_more_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rect_1"
+            android:layout_toRightOf="@id/donate_btn"
+            android:layout_marginRight="10dp"
+            android:text="LEARN MORE"
+            android:textColor="#fff"
+            android:fontFamily="@font/mons"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

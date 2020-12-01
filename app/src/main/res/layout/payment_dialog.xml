@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="39dp"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/confirmation_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Payment Alert"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/mons"/>
+
+
+    <TextView
+        android:id="@+id/confirmation_tutor_desc2_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Your payment\n is yet to be done"
+        android:textSize="18sp"
+        android:layout_below="@id/confirmation_txt"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/mons"/>
+
+    <Button
+        android:id="@+id/confirm_btn2"
+        android:layout_width="115.99dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rect_1"
+        android:layout_below="@id/confirmation_tutor_desc2_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Pay Now"
+        android:fontFamily="@font/mons"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_marginBottom="39dp"
+        android:textSize="12sp"/>
+</RelativeLayout>

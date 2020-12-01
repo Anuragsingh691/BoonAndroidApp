@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "419201495013",
+    "firebase_url": "https://boon-android-app.firebaseio.com",
+    "project_id": "boon-android-app",
+    "storage_bucket": "boon-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419201495013:android:5fd8eed975e6d060cbc90c",
+        "android_client_info": {
+          "package_name": "com.example.boon_android_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419201495013-nkh6v5kfr57qad3ha7auip8n6ubn4579.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.boon_android_app",
+            "certificate_hash": "ec78eadf228e819c345d45f457f311a6cb583589"
+          }
+        },
+        {
+          "client_id": "419201495013-a12cevbf8d4im7vos53tetbg30513rni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ8yQ3Udo_HvNY5ef6f4HMP_Ay5En9WNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419201495013-a12cevbf8d4im7vos53tetbg30513rni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

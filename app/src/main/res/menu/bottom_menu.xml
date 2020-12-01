@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_nav_tutor"
+        android:fontFamily="@font/mons" android:title="Tutor" android:icon="@drawable/tutor_logo"/>
+    <item android:id="@+id/bottom_nav_home"
+        android:fontFamily="@font/mons"
+    android:title="Home" android:icon="@drawable/home_logo"/>
+    <item android:id="@+id/bottom_nav_profile"
+        android:fontFamily="@font/mons"
+        android:title="Profile" android:icon="@drawable/profile_logo"/>
+</menu>

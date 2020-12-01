@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Profilesignup">
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="93dp"
+        android:id="@+id/profile_img"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="151dp"
+        android:src="@drawable/home_logo" />
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="258dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/profile_img"
+        android:layout_marginLeft="51dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Profile"
+        android:fontFamily="@font/mons"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="50dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/profile_txt"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Name"
+        android:fontFamily="@font/mons"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/name_edtText"
+        android:layout_width="312dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/name_txt"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/mons"
+        android:hint="Please add your first name"
+        android:textSize="14sp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/email_txt"
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/name_edtText"
+        android:layout_marginLeft="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Email"
+        android:fontFamily="@font/mons"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/mail_edtText"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/email_txt"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/mons"
+        android:hint="User Email"
+        android:textSize="14sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/lang_txt"
+        android:layout_width="307dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/mail_edtText"
+        android:textColor="@color/colorPrimary"
+        android:text="Languages"
+        android:fontFamily="@font/mons"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/lang2_txt"
+        android:layout_width="307dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lang_txt"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="#656565"
+        android:text="In which language you want tution.\nYou can select multiple"
+        android:fontFamily="@font/mons"
+        android:textSize="12sp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_eng"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/lang2_txt"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/checkbox_Eng_txt"
+        android:layout_width="56dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/lang2_txt"
+        android:layout_marginLeft="58dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimary"
+        android:text="English"
+        android:fontFamily="@font/mons"
+        android:textSize="15sp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_hindi"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/lang2_txt"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/checkbox_Eng_txt"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/checkbox_hin_txt"
+        android:layout_width="56dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/lang2_txt"
+        android:layout_marginLeft="190dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Hindi"
+        android:fontFamily="@font/mons"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/Level_txt"
+        android:layout_width="56dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/checkbox_Eng_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Level"
+        android:fontFamily="@font/mons"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:id="@+id/slider_layout"
+        android:layout_below="@id/Level_txt"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:background="@drawable/checkbox_rect"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:id="@+id/six_txt"
+            android:layout_width="56dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimary"
+            android:text="6th"
+            android:fontFamily="@font/mons"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/twel_txt"
+            android:layout_width="56dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:text="12th"
+            android:fontFamily="@font/mons"
+            android:textSize="15sp"/>
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider"
+            android:layout_width="312dp"
+            android:layout_height="40dp"
+            android:stepSize="1.0"
+            app:labelStyle="@style/Widget.App.Tooltip"
+            app:thumbColor="?attr/colorPrimary"
+            android:valueFrom="6"
+            android:value="10"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:valueTo="12" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_below="@+id/slider_layout"
+        android:id="@+id/save_btn"
+        android:layout_width="85.82dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="138dp"
+        android:background="@drawable/rect_1"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:fontFamily="@font/mons"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

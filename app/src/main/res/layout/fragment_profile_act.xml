@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileAct">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/home_logo"/>
+
+    <TextView
+        android:id="@+id/profile_act_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userName"
+        android:layout_toRightOf="@id/logo_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/mons"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/profile_act_userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userEmail"
+        android:layout_below="@id/logo_img"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mons"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_act_userImage"
+        android:layout_width="69.78dp"
+        android:layout_height="69.78dp"
+        android:src="@drawable/ic_boy"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10.53dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/horiz_line"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/profile_act_userEmail"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/checkbox_rect"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout1"
+        android:layout_below="@id/horiz_line"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Level_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/class_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIII"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img1"
+            android:layout_marginLeft="200dp"
+            android:layout_toRightOf="@id/Level_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit_foreground" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rel_layout1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Location_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/Bangalore_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangalore"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img2"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/Location_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit_foreground" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rel_layout2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Lang_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/language_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img3"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/Lang_title_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit_foreground" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rel_layout3"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contact_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/contact_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8056130658"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img4"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/contact_title_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit_foreground" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rel_layout4"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/payment_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment \n Method"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/payment_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G Pay"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img5"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/payment_title_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_edit_foreground" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel_layout6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rel_layout5"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recent_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/mons"/>
+
+        <EditText
+            android:id="@+id/recent_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mp Sinha"
+            android:textSize="18dp"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@id/edt_img6"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/recent_title_txt"
+            android:fontFamily="@font/mons"/>
+        <ImageView
+            android:id="@+id/edt_img6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/eye" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/horiz_line2"
+        android:orientation="vertical"
+        android:layout_below="@+id/rel_layout6"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/checkbox_rect"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+   <TextView
+       android:layout_width="101dp"
+       android:layout_height="29dp"
+       android:id="@+id/history_btn"
+       android:layout_marginTop="20dp"
+       android:text="Full History"
+       android:textColor="@color/colorPrimary"
+       android:gravity="center_vertical"
+       android:layout_marginLeft="30dp"
+       android:layout_below="@id/horiz_line2"
+       android:paddingLeft="10dp"
+       android:background="@drawable/checkbox_rect"
+       android:fontFamily="@font/mons"/>
+    <TextView
+        android:id="@+id/complaint_btn"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:background="@drawable/checkbox_rect"
+        android:text="Register Complaint"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/mons"
+        android:layout_toRightOf="@+id/history_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/horiz_line2"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/donate_btn"
+        android:layout_width="101dp"
+        android:layout_height="29dp"
+        android:background="@drawable/checkbox_rect"
+        android:text="Donate"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/mons"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/history_btn"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/faq"
+        android:layout_width="79dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/history_btn"
+        android:layout_toRightOf="@+id/donate_btn"
+        android:text="FAQ"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        android:background="@drawable/checkbox_rect"
+        android:fontFamily="@font/mons"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/ABou_us_btn"
+        android:layout_width="101dp"
+        android:layout_height="29dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@drawable/checkbox_rect"
+        android:text="About Us"
+        android:fontFamily="@font/mons"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/history_btn"
+        android:layout_toRightOf="@+id/faq"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/horiz_line3"
+        android:layout_below="@+id/ABou_us_btn"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/checkbox_rect"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/visit_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horiz_line3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Visit Us"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:fontFamily="@font/mons"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/visit_us"
+        android:id="@+id/visit_us_img"
+        android:src="@drawable/ic_lang_red_foreground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/visit_us_img"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="34dp"
+            android:id="@+id/logout"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/checkbox_rect"
+            android:text="Logout"
+            android:textSize="14sp"
+            android:fontFamily="@font/mons" />
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="34dp"
+            android:id="@+id/update_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/logout"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/checkbox_rect"
+            android:text="Update"
+            android:textSize="14sp"
+            android:fontFamily="@font/mons" />
+    </RelativeLayout>
+
+</RelativeLayout>

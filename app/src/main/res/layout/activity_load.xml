@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loading">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+<!--        <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:loader_animDur="400"-->
+<!--            android:id="@+id/loader"-->
+<!--            app:loader_noOfDots="3"-->
+<!--            app:loader_circleRadius="6dp"-->
+<!--            app:loader_defaultColor="#000"-->
+<!--            app:loader_selectedColor="#fff"-->
+<!--            app:loader_dotsDist="3dp"-->
+<!--            app:loader_expandOnSelect="false"-->
+<!--            app:loader_isSingleDir="false"-->
+<!--            app:loader_selectedRadius="10dp"-->
+<!--            app:loader_showRunningShadow="true"-->
+<!--            app:loader_firstShadowColor="#B8B7B7"-->
+<!--            app:loader_secondShadowColor="#B8B7B7"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/load_text"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:text="Connecting you with wisdom"
+        android:textSize="20dp"
+        android:layout_below="@id/layout"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:fontFamily="@font/libre"
+        android:textColor="#fff" />
+
+</RelativeLayout>

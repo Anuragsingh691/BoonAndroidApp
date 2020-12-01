@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#860A0A</color>
+    <color name="colorPrimaryDark">#7C0A0A</color>
+    <color name="colorAccent">#860A0A</color>
+    <color name="blue_selected">#7C0A0A</color>
+    <color name="blue_default">#7C0A0A</color>
+    <color name="btn_clr">#7C0A0A</color>
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
+
+</resources>

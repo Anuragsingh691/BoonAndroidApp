@@ -18,6 +18,7 @@
         android:layout_height="60dp"
         android:background="@drawable/eclipse"
         android:backgroundTint="#DBD4D4"
+        android:id="@+id/chat_fab_search"
         android:src="@drawable/pets"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="10dp"

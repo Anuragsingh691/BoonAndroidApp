@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity implements PaymentResultList
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,ChatBotAct.class));
-                finish();
+                startPayment();
                 dialogPay.dismiss();
             }
         });

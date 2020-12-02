@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.boon_android_app.Prevalent.Prevalent;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HomeActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -23,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     TextView title,eng,hin;
     private RelativeLayout searchLayout,home;
     private ImageView logo;
+    FloatingActionButton chatFab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,13 @@ public class HomeActivity extends AppCompatActivity {
         title=findViewById(R.id.advaitya);
         home=findViewById(R.id.language_24);
         searchLayout=(RelativeLayout)findViewById(R.id.search_layout);
+        chatFab=findViewById(R.id.chat_fab);
+        chatFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this,ChatBotAct.class));
+            }
+        });
         searchLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

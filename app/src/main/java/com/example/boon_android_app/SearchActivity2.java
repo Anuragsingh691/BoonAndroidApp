@@ -25,6 +25,7 @@ import com.example.boon_android_app.model.TutorVH;
 import com.example.boon_android_app.model.tutors;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -37,6 +38,7 @@ public class SearchActivity2 extends AppCompatActivity {
     private ImageView searchImage,searchFilter;
     private String searchInput;
     private EditText searchEdit;
+    private FloatingActionButton chatFab;
     Dialog dialogLoc;
     private TextView Dcurr,DchangeLoc,twelveth,tenth,nineth,nineEng,tenthHin,twelveBio;
 
@@ -44,6 +46,13 @@ public class SearchActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search2);
+        chatFab=findViewById(R.id.chat_fab_search2);
+        chatFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SearchActivity2.this,ChatBotAct.class));
+            }
+        });
         recyclerViewSu=findViewById(R.id.suggested_rv);
         recyclerViewSu.setHasFixedSize(true);
         recyclerView=findViewById(R.id.offline_rv);

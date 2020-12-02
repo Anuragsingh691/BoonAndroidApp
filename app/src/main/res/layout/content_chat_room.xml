@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ChatBotAct"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_chat_bot">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -44,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="3"
             android:background="@null"
+            android:fontFamily="@font/mons"
             android:hint="@string/what_s_on_your_mind"
             android:lines="1"
             android:paddingLeft="10dp" />

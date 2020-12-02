@@ -219,6 +219,7 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:id="@+id/chat_fab_search2"
             android:background="@drawable/eclipse"
             android:backgroundTint="#DBD4D4"
             android:src="@drawable/pets"
